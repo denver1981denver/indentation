@@ -1,0 +1,16 @@
+.one__image-up {
+  margin-right: 25px;
+}
+
+.one__description-up {
+  display: inline-block;
+  vertical-align: top;
+  max-width: 490px;
+}
+
+.one__description-down {
+  display: inline-block;
+  vertical-align: top;
+  max-width: 480px;
+  margin-right: 35px;
+}

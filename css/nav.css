@@ -1,0 +1,35 @@
+.nav {
+  padding: 25px 0 25px 15px;
+  background-color: #f1f1f1;
+  border-radius: 10px;
+}
+
+.nav__title {
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 44px;
+  line-height: 120%;
+}
+
+.nav__list {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 120%;
+}
+
+.nav__list_padding-left_color {
+  padding-left: 25px;
+  color: #02535f;
+}
+
+.nav__list_margin-bottom {
+  margin-bottom: 30px;
+}
+
+.nav__item:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.nav__link {
+  border-bottom: 1px solid #000;
+}
