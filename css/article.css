@@ -2,16 +2,16 @@
   padding-top: 60px;
 }
 
+.article__container {
+  margin-bottom: 50px;
+}
+
 .article__title {
   margin-bottom: 30px;
   font-style: normal;
   font-weight: 900;
   font-size: 60px;
   line-height: 120%;
-}
-
-.article__container {
-  margin-bottom: 50px;
 }
 
 .article__navigation {

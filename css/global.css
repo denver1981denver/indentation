@@ -17,12 +17,9 @@ body {
 }
 
 img {
+  margin-bottom: 30px;
   max-width: 100%;
   max-height: 100%;
-}
-
-img:not(.card-down__image, .two__figure, .three__image-recipes-html) {
-  margin-bottom: 30px;
 }
 
 a {
@@ -54,8 +51,9 @@ p {
   line-height: 120%;
 }
 
-em {
-  letter-spacing: -0.6px;
+span {
+  font-style: italic;
+  letter-spacing: -0.3px;
 }
 
 .article {
@@ -83,7 +81,12 @@ section {
 
 .image-center {
   display: block;
-  margin: 0 auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.margin-none {
+  margin-bottom: 0;
 }
 
 

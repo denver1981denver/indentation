@@ -29,7 +29,7 @@
             части кода продолжат нормально работать.
           </p>
 
-          <p>
+          <p class="margin-none">
             Как это часто бывает, знание базовых принципов поможет проявить
             гибкость и выйти за их пределы. Эти знания особенно важны для
             начинающих, но также будут полезным напоминанием и для более опытных
@@ -43,7 +43,7 @@
           <div class="container">
             <h2 class="nav__title">Содержание:</h2>
 
-            <ol class="nav__list nav__list_padding-left_color">
+            <ol class="nav__list nav__list_place_article">
               <li class="nav__item">
                 <a class="nav__link" href="#one">Отступ задается от предыдущего элемента к следующему</a>
               </li>
@@ -66,43 +66,49 @@
             сверху вниз, слева направо.
           </h2>
 
-          <img class="one__image-up" src="image/cats.jpg" alt="Изображение кошек">
+          <div class="one__card-up card-up">
+            <img class="card-up__image" src="image/cats.jpg" alt="Изображение кошек">
 
-          <div class="one__description-up">
-            <p> <strong>ВАЖНО:</strong> <em>margin</em> всегда задают от предыдущего элемента к следующему.</p>
+            <div class="card-up__description">
+              <p> <strong>ВАЖНО:</strong> <span>margin</span> всегда задают от предыдущего элемента к следующему.</p>
 
-            <p>
-              Свойство <em>margin</em>  необходимо только для того,
-              чтобы отодвинуть своего соседа справа или снизу, поэтому используется <em>margin-right</em> и
-              <em>margin-bottom.</em>
-            </p>
+              <p>
+                Свойство <span>margin</span>  необходимо только для того,
+                чтобы отодвинуть своего соседа справа или снизу, поэтому используется <span>margin-right</span> и
+                <span>margin-bottom.</span>
+              </p>
 
-            <p>(!) Свойства <em>margin-left</em> и <em>margin-top</em> используются крайне редко.</p>
+              <p>(!) Свойства <span>margin-left</span> и <span>margin-top</span> используются крайне редко.</p>
 
-            <p>
-              Для <em>padding</em>  верно обратное. Исключением является его применения в декоративных целях,
-              например, для увеличения области ссылки.
-            </p>
+              <p class="margin-none">
+                Для <span>padding</span>  верно обратное. Исключением является его применения в декоративных целях,
+                например, для увеличения области ссылки.
+              </p>
+            </div>
           </div>
 
-          <div class="one__description-down">
-            <p>
-              Отступ внутри блока сверху или слева реализуется через <em>padding-top</em> и <em>padding-left</em>
-              родителя.
-            </p>
+          <div class="one__card-down card-down">
+            <div class="card-down__description">
+              <p>
+                Отступ внутри блока сверху или слева реализуется через <span>padding-top</span> и <span>padding-left</span>
+                родителя.
+              </p>
 
-            <p>
-              Отступы, как правило, делают в направлении от предыдущего элемента к следующему.
-              Так элемент не будет толкать сам себя.
-            </p>
+              <p>
+                Отступы, как правило, делают в направлении от предыдущего элемента к следующему.
+                Так элемент не будет толкать сам себя.
+              </p>
 
-            <p>
-              Изначально элемент статичен, а его положение может меняться только под воздействием
-              свойств других блоков или свойств родителя.
-            </p>
+              <p class="margin-none">
+                Изначально элемент статичен, а его положение может меняться только под воздействием
+                свойств других блоков или свойств родителя.
+              </p>
+            </div>
+
+            <img class="margin-none" src="image/cat.jpg" alt="Спящая кошка" >
           </div>
 
-          <img src="image/cat.jpg" alt="Спящая кошка" >
+
         </div>
       </section>
 
@@ -122,15 +128,15 @@
           <p>Отступ делают за счёт соседних элементов, а не дочерних:</p>
 
           <figure class="two__figure">
-            <img src="image/list-browser.jpg" alt="скриншоты с изображением списка в барузере и разметке HTML">
+            <img class="margin-none" src="image/list-browser.jpg" alt="скриншоты с изображением списка в барузере и разметке HTML">
 
-            <figcaption class="two__figcaption">
-              <strong>ВАЖНО:</strong> здесь <em>.list-item</em> — последний возможный элемент в котором мы задаём отступ, чтобы разделить списки.
+            <figcaption class="two__figcaption ">
+              <strong>ВАЖНО:</strong> здесь <span>.list-itspan</span> — последний возможный элемент в котором мы задаём отступ, чтобы разделить списки.
             </figcaption>
           </figure>
 
           <p>
-            Казалось бы, можно задать отступ параграфу <em>&lt;p&gt;</em> , либо обёртке <em>&lt;article&gt;</em>
+            Казалось бы, можно задать отступ параграфу <span>&lt;p&gt;</span> , либо обёртке <span>&lt;article&gt;</span>
             для достижения той же цели. Внешне останется все точно также, но так делать не рекомендуется.
           </p>
 
@@ -139,9 +145,9 @@
           <img class="image-center" src="image/header.jpg" alt="скриншот с изображением заголовка в раметке HTML">
 
           <p>
-            В случае с заголовком, если ему необходим отступ сверху, последним элементом будет <em>section</em>.
-            Именно для него задается <em>padding-top</em> ,а не div с классом <em>container</em> .
-            Свойства <em>margin</em>, которые стоят по умолчанию необходимо обнулить.
+            В случае с заголовком, если ему необходим отступ сверху, последним элементом будет <span>section</span>.
+            Именно для него задается <span>padding-top</span> ,а не div с классом <span>container</span> .
+            Свойства <span>margin</span>, которые стоят по умолчанию необходимо обнулить.
           </p>
 
           <img class="image-center" src="image/header-section.jpg" alt="скриншоты с отображением HTML разметки и секции с заголовком и изображением кошки в браузере">
@@ -165,14 +171,14 @@
           <img class="image-center" src="image/recipes.jpg" alt="скриншот из браузера с изображением списка рецептов">
 
           <p class="description-spacing">
-            В соответствии со вторым принципом: последний <em>margin</em> обнуляется, а нижний отступ задаётся через <em>padding</em>
-            для <em>section.</em> Я чаще всего задаю <em>padding</em> для секции с обоих сторон,
-            если расстояние между секциями 100px задаю секциям <em>padding-top:50px</em> и <em>padding-bottom:50px.</em>
+            В соответствии со вторым принципом: последний <span>margin</span> обнуляется, а нижний отступ задаётся через <span>padding</span>
+            для <span>section.</span> Я чаще всего задаю <span>padding</span> для секции с обоих сторон,
+            если расстояние между секциями 100px задаю секциям <span>padding-top:50px</span> и <span>padding-bottom:50px.</span>
           </p>
 
           <img class="image-center" src="image/recipes-padding.jpg" alt="скриншот с изображением списка рецептов и выделенными отступами в панели разработчика браузера">
 
-          <img class="three__image-recipes-html image-center" src="image/recipes-html.jpg" alt="скриншот из редактора кода с изображением списка рецептов в разметке HTML">
+          <img class="margin-none image-center" src="image/recipes-html.jpg" alt="скриншот из редактора кода с изображением списка рецептов в разметке HTML">
 
           <img src="image/recipes-html-01.jpg" alt="скриншот из редактора кода с изображением списка рецептов в разметке HTML">
 
@@ -190,7 +196,7 @@
 
           <p>Советую использовать псевдоклассы :last-child чаще других, например так:</p>
 
-          <img class="image-center" src="image/last-child.jpg" alt="скриншот из редактора кода с изображением псевдоэлементов last-child в разметке HTML">
+          <img class="margin-none image-center" src="image/last-child.jpg" alt="скриншот из редактора кода с изображением псевдоэлементов last-child в разметке HTML">
         </div>
       </section>
 
@@ -199,7 +205,7 @@
           <div class="container">
             <h2 class="nav__title">Подытожим:</h2>
 
-            <ul class="nav__list nav__list_margin-bottom">
+            <ul class="nav__list nav__list_place_results">
               <li class="nav__item">— отступы задаём от предыдущего элемента к следующему</li>
               <li class="nav__item">— используем только margin-right и margin-bottom</li>
               <li class="nav__item">— внешние отступы задаются только между соседями</li>
@@ -207,7 +213,7 @@
               <li class="nav__item">— последнему элементу группы отступ всегда обнуляем</li>
             </ul>
 
-            <p class="results__description">
+            <p class="margin-none">
               Конечно бывают исключения. Ведь макеты бывают различной сложности.
               Иногда базовые принципы приходится нарушать в угоду дизайнерского решения или простоты вёрстки.
               Но для этого эти принципы необходимо хорошо знать.

@@ -1,14 +1,19 @@
-.one__image-up {
-  margin-right: 25px;
+.card-up {
+  margin-bottom: 30px;
 }
 
-.one__description-up {
+.card-up__image {
+  margin-right: 25px;
+  margin-bottom: 0;
+}
+
+.card-up__description {
   display: inline-block;
   vertical-align: top;
   max-width: 490px;
 }
 
-.one__description-down {
+.card-down__description {
   display: inline-block;
   vertical-align: top;
   max-width: 480px;

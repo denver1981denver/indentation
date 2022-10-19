@@ -17,12 +17,12 @@
   line-height: 120%;
 }
 
-.nav__list_padding-left_color {
+.nav__list_place_article {
   padding-left: 25px;
   color: #02535f;
 }
 
-.nav__list_margin-bottom {
+.nav__list_place_results {
   margin-bottom: 30px;
 }
 
